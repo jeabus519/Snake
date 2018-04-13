@@ -84,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -97,6 +98,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wavTones.com.unregistred.sin_250Hz_-6dBFS_0.05s.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\250Hz_50ms_tone.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wavTones.com.unregistred.sin_400Hz_-6dBFS_0.0375s.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wavTones.com.unregistred.sin_400Hz_-6dBFS_0.01s.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

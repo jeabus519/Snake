@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Blockade
 {
@@ -28,6 +29,8 @@ namespace Blockade
 
         SolidBrush wBrush = new SolidBrush(Color.White);
         SolidBrush bBrush = new SolidBrush(Color.Black);
+
+        SoundPlayer player = new SoundPlayer(Properties.Resources._400Hz_10ms);
 
         //scales original resolution up to the display size
         public void Scale()
@@ -98,6 +101,8 @@ namespace Blockade
                     return;
                 }
                 Refresh();
+
+                player.Play();
             }
 
             /// I initially planned to have atleast one mode with multiple snakes on screen.
